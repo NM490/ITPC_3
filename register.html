@@ -10,35 +10,79 @@
 </head>
 
 <body>
-    <header>
-        <h1>Register Page</h1>
-    </header>
-    <main>
+    <!DOCTYPE html>
+    <html lang="en">
 
-        <div>
-            <input type="text" id="UserName" placeholder="UserName">
-        </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
 
-        <div>
-            <input type="password" id="Password"placeholder="Password">
-        </div>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <div>
-            <input type="text" id="firstName" placeholder="First Name">
-        </div>
+        <style>
+            div {
+                display: block;
+            }
 
-        <div>
-            <input type="text" id="lastName" placeholder="Last Name">
-        </div>
+            *,
+            ::after,
+            ::before {
+                box-sizing: border-box;
+            }
 
-        <div>
-            <a href="#"><button>Cancel</button></a>
-        </div>
+            body {
+                margin: 0 !important;
+            }
 
-        <div>
-            <a href="#"><button>Register</button></a>
-        </div>
-    </main>
-</body>
+            .bg-img {
+                background-image: url('./assets/img/wall.jpg');
+                background-size: cover;
+                background-position: center;
+                height: 100vh;
+            }
 
-</html>
+            .login-form {
+
+                background-color: rgba(255, 255, 255, 0.9);
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+        </style>
+
+    </head>
+
+    <body class="bg-img">
+        <main class="login-form" style=" margin: 100px; margin-top: 50px; padding:3rem;">
+            <h1 style="text-align: center; padding: 3rem;">Register Page</h1>
+
+            <i class="material-icons" style="font-size: 48px; display: ruby-text;">account_circle</i>
+            <div style="display: ruby-text; padding-top: 1.5rem;">
+                <input style="height: 48px; " type="text" id="UserName" placeholder="UserName">
+            </div>
+            <div style="display: ruby-text; padding-top: 1.5rem;">
+                <input style="height: 48px;" type="password" id="Password" placeholder="Password">
+            </div>
+            <div style="display: ruby-text; padding-top: 1.5rem;">
+                <input style="height: 48px;" type="password" id="confirmPassword" placeholder="Confirm Password">
+            </div>
+            <div style="display: ruby-text; padding-top: 1.5rem;">
+                <input style="height: 48px; " type="text" id="firstName" placeholder="First Name">
+            </div>
+            <div style="display: ruby-text; padding-top: 1.5rem;">
+                <input style="height: 48px; " type="text" id="firstName" placeholder="Last Name">
+            </div>
+
+            <hr style="width: 250px; margin-top: 2rem; margin-bottom: 2rem;">
+            <div style="display: ruby-text;">
+                <a href="#"><button
+                        style="background-color: black; color: white; padding: 10px; width: 200px; border-radius: 10px;">Register</button></a>
+            </div>
+
+            <div style="display: ruby-text; margin-top: 1rem; margin-bottom: 1rem;">
+                <a href="#"><button
+                        style="background-color: black; color: white; padding: 10px; width: 200px; border-radius: 10px;">Cancel</button></a>
+            </div>
+        </main>
+    </body>
+
+    </html>
